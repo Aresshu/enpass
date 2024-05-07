@@ -5,11 +5,13 @@ with open('README.md') as file:
 
 setup(
     name = 'enpass',
-    version = '0.1.0',
+    version = '0.1.1',
     description = 'Simple entropy password validator.',
     long_description= long_description,
     long_description_content_type = 'text/markdown',
     author = 'Andres Ordonez',
+    packages=['enpass'],
+    url='https://github.com/Aresshu/enpass',
     license = 'MIT',
     classifiers = [
         'Intended Audience :: Developers',

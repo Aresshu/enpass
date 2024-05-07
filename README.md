@@ -1,4 +1,4 @@
-![Enpass](/data/logo.png "Enpass")
+![Enpass](https://raw.githubusercontent.com/Aresshu/enpass/main/data/logo.png "Enpass")
 
 ### Enpass is a simple password entropy strength validator
 This project can be used to validate a password strength. Designed to be lightweight with the following benefits:
