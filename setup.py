@@ -1,16 +1,16 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open('README.md') as file:
     long_description = file.read()
 
 setup(
     name = 'enpass',
-    version = '0.1.1',
+    version = '0.1.2',
     description = 'Simple entropy password validator.',
     long_description= long_description,
     long_description_content_type = 'text/markdown',
     author = 'Andres Ordonez',
-    packages=['enpass'],
+    packages=find_packages(),
     url='https://github.com/Aresshu/enpass',
     license = 'MIT',
     classifiers = [

@@ -18,12 +18,12 @@ pip install enpass
 Entropy equation = log2(B^L) 
 `B = Base; L = Length`
 ```python
-    from enpass import *
+    import enpass as ep
 
     password = 'P@SSW0RD!'
 
     #Calculates the entropy of a password in bits.
-    entropy = enpass.calc_entopy(password)
+    entropy = ep.calc_entropy(password)
 ```
 `validate` checks if the password's entropy meets the specified minimum requirement.
 
@@ -32,7 +32,7 @@ Great Passwords should be between 70-90.
 ```python
     min_entropy = 60.0
     # Checks if the password's entropy meets the specified minimum requirement.
-    validate = enpass.validate(entropy, min_entropy)
+    validate = ep.validate(entropy, min_entropy)
 ```
 `estimate_bruteforce_time` assumes that cracking time scales linearly with the number of possible combinations.
 
@@ -41,7 +41,7 @@ such as dictionary attacks or those exploiting weaknesses in password hashing al
 ```python
     guesses_per_second = 100_000_000
     # Estimates the amount of time required to brute-force a password 
-    time_brute_estimate = enpass.estimate_bruteforce_time(entropy, guesses_per_second)
+    time_brute_estimate = ep.estimate_bruteforce_time(entropy, guesses_per_second)
 ```
 ## Roadmap
 - [x] Entropy Calculator
